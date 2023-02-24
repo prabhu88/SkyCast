@@ -1,6 +1,12 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect,Suspense} from 'react';
+import { HashRouter, Route,Switch,Redirect}   from 'react-router-dom';
 import {api} from './api';
-
+import Layout from './layout/default';
+const loading = (
+    <div className="pt-3 text-center">
+      <div className="sk-spinner sk-spinner-pulse">loading</div>
+    </div>
+)
 const App = () => {
     const [successText, setSuccessText] = useState(null);
 
@@ -11,10 +17,14 @@ const App = () => {
     });
 
     return (
-        <div>
-            <h2>Electron is running! sss</h2>
-            <p>Fetched api response from server: {successText}</p>
-        </div>
+        <HashRouter>
+            <Suspense fallback={loading}>
+                <Switch>
+                    <Route path="/Admin" render={(props) => <Layout {...props} />} />
+                    <Redirect from="/" to="Admin/Dashboard" />
+                </Switch>
+            </Suspense>        
+        </HashRouter>
     );
 };
 

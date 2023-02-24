@@ -1,0 +1,28 @@
+$rainy: #B1B1B1;
+$sunny: #FFC72C;
+$cloudy: #d6cdcd;
+$snowy: #FFFFFF;
+$rainy-gradient: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
+$sunny-gradient: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
+$cloudy-gradient: linear-gradient(to bottom, rgba(155, 155, 155, 0.7), rgba(155, 155, 155, 0.5));
+$snowy-gradient: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
+
+.dashBodyBg {
+    margin: 0 ;
+    padding: 0 ;       
+    background-color: $rainy;
+    background-image: url('../assets/img/rainy.jpg');
+    background-size: cover;    
+    opacity: 0.9;        
+}
+
+.rainy {
+    background: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    justify-content: space-around;
+}
+.card {
+    
+}

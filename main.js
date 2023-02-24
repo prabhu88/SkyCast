@@ -20,7 +20,8 @@ function createWindow() {
         height: 600,
         webPreferences: {
             nodeIntegration: true
-        }
+        },
+        icon: path.join(__dirname,'public/logo.ico')
     });
 
     // and load the index.html of the app.

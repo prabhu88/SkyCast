@@ -6,13 +6,11 @@ import cors from 'cors';
 appModulePath.addPath(`${__dirname}`);
 
 const Api = express();
-const HTTP = http.Server(Api);
-
+const server = http.Server(Api);
 Api.use(cors());
-
 Api.get('/test', (req, res) => res.status(200).send('success!'));
 
-HTTP.listen(9001, () => {
+server.listen(9001, () => {
     console.log('listening on *:9001');
 });
-
+server.close()
