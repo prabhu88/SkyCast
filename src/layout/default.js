@@ -27,8 +27,7 @@ const Layout = (props) => {
     });
   };
   useEffect(() => {
-    const  pathname = location.pathname;
-    console.log(pathname)
+    const  pathname = location.pathname;    
     if ( pathname.indexOf("Dashboard") > -1) {
       setSideImage(null)
       document.body.classList.add("dashBodyBg");

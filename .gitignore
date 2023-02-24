@@ -1,5 +1,6 @@
 dist-old
-
+dist-old2
+.env
 # Logs
 logs
 *.log

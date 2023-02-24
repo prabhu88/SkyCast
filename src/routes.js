@@ -1,5 +1,10 @@
 import Dashboard from './views/dashboard'
 import WeatherUpdate from './views/weatherUpdats'
+import LocationBased from './views/locationBased';
+import WeatherAlert from './views/weatherAlerts';
+import SunriseAndSunset from './views/sunRaiseSet';
+import SocialSharing from './views/socialSharing';
+import MapView from './views/mapView';
 // import UserSettings from '../views/UserSettings'
 // import AllInvoices from '../views/AllInvoices'
 // import CreateInvoice from '../views/CreateInvoice'
@@ -20,41 +25,42 @@ const routes = [
         component: Dashboard,
         layout: "/admin"
       },
-    //   {
-    //     path: "/profile",
-    //     name: "Profile",
-    //     icon: "nc-icon nc-circle-09",
-    //     component: UserSettings,
-    //     layout: "/admin"
-    //   },
-    //   {
-    //     path: "/create",
-    //     name: "Create Invoice",
-    //     icon: "nc-icon nc-notes",
-    //     component: CreateInvoice,
-    //     layout: "/admin"
-    //   },
-      // {
-      //   path: "/typography",
-      //   name: "Typography",
-      //   icon: "nc-icon nc-paper-2",
-      //   component: Typography,
-      //   layout: "/admin"
-      // },
-    //   {
-    //     path: "/invoice",
-    //     name: "All Invoices",
-    //     icon: "nc-icon nc-atom",
-    //     component: AllInvoices,
-    //     layout: "/admin"
-    //   },
-      // {
-      //   path: "/maps",
-      //   name: "Maps",
-      //   icon: "nc-icon nc-pin-3",
-      //   component: Maps,
-      //   layout: "/admin"
-      // },
+      {
+        path: "/Location-based",
+        name: "Location-based weather updates",
+        icon: "nc-icon nc-circle-09",
+        component: LocationBased,
+        layout: "/admin"
+      },
+      {
+        path: "/Weather-alerts",
+        name: "Weather alerts",
+        icon: "nc-icon nc-notes",
+        component: WeatherAlert,
+        layout: "/admin"
+      },
+      {
+        path: "/Sunrise-Sunset",
+        name: "Sunrise And Sunset",
+        icon: "nc-icon nc-paper-2",
+        component: SunriseAndSunset,
+        layout: "/admin"
+      },
+      {
+        path: "/Map-View",
+        name: "Map View",
+        icon: "nc-icon nc-pin-3",
+        component: MapView,
+        layout: "/admin"
+      },
+      {
+        path: "/Social-Sharing",
+        name: "Social Sharing",
+        icon: "nc-icon nc-atom",
+        component: SocialSharing,
+        layout: "/admin"
+      },
+      
       // {
       //   path: "/notifications",
       //   name: "Notifications",
