@@ -1,5 +1,9 @@
 dist-old
 dist-old2
+dist
+build
+build-server
+
 .env
 # Logs
 logs

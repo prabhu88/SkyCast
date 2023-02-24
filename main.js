@@ -7,10 +7,9 @@ const url = require('url');
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow;
-
-function createWindow() {
-    // express server is started here when production build
+function createWindow() {    
     if (!isDev) {
+        console.log('called');
         require(path.join(__dirname, 'build-server/server'));
     }
 

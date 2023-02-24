@@ -35,7 +35,9 @@
   },
   "dependencies": {
     "app-module-path": "^2.2.0",
+    "async": "^3.2.4",
     "axios": "^0.18.0",
+    "body-parser": "^1.20.2",
     "bootstrap": "^5.2.3",
     "cors": "^2.8.5",
     "electron-is-dev": "^1.1.0",
