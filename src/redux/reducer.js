@@ -1,3 +1,4 @@
 import {combineReducers} from 'redux'
 import weatherReducer from './reducer/weatherReducer'
-export default combineReducers({weatherReducer})
+import forecastReducer from './reducer/forecastReducer'
+export default combineReducers({weatherReducer,forecastReducer})
